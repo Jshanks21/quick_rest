@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5f03de67f3b08606f4c91071
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "A New Blockchain Dev",
+    "subscribeToChannel": "Austin Griffith"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5f03de67f3b08606f4c91071
+
+###
+
+PATCH http://localhost:3000/subscribers/5f03de7cf3b08606f4c91072
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
